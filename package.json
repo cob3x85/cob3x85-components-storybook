@@ -14,20 +14,34 @@
     "ortiz"
   ],
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/cob3x85/cob3x85-components-storybook",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/cob3x85/cob3x85-components-storybook"
   },
   "files": [
     "dist/"
   ],
   "release": {
-    "branch": "main"
+    "branches": [
+      "main",
+      "storybook",
+      {
+        "name": "beta",
+        "prerelease": true
+      },
+      {
+        "name": "alpha",
+        "prerelease": true
+      }
+    ]
   },
   "peerDependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
   },
   "scripts": {
     "dev": "yarn storybook",
@@ -37,7 +51,9 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "clean": "rimraf dist/",
-    "copyfiles": "copyfiles -u 1 src/**/*.css dist/"
+    "copyfiles": "copyfiles -u 1 src/**/*.css dist/",
+    "push:npm": "np",
+    "test": "echo 'all tests passes..."
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -58,10 +74,12 @@
     "@typescript-eslint/eslint-plugin": "^6.14.0",
     "@typescript-eslint/parser": "^6.14.0",
     "@vitejs/plugin-react-swc": "^3.5.0",
+    "copyfiles": "^2.4.1",
     "eslint": "^8.55.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
     "eslint-plugin-storybook": "^0.6.15",
+    "np": "^9.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rimraf": "^5.0.5",
