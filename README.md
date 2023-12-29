@@ -24,4 +24,10 @@ Para agregar los archivos de distribución y typings es necesario agregar las si
 }
 ```
 
-Libreria para hacer el publish de forma automatizada, ``
+- Libreria para hacer el publish de forma automatizada, `np`
+
+[NP Package](https://www.npmjs.com/package/np)
+
+- Libreria para actualizar paquetes de npm `npm-check-updates`
+
+[NPM Check updates](https://www.npmjs.com/package/npm-check-updates#npm-check-updates)
